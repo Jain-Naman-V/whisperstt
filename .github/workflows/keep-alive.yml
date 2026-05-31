@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping Render app to prevent spin-down
         run: |
-          curl -sS --max-time 30 "${{ vars.RENDER_APP_URL || 'https://whisper-asr.onrender.com' }}/health" || echo "Ping failed (expected if not deployed yet)"
+          curl -sS --max-time 30 "https://whisperstt-r9ss.onrender.com/health" || echo "Ping failed (expected if not deployed yet)"
